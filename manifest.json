@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Meta Logger",
+  "version": "0.1.0",
+  "description": "Logs metadata for YouTube videos you watch and stores it locally.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": ["storage"],
+  "host_permissions": ["https://www.youtube.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_page": "options.html"
+}
