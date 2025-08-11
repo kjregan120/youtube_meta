@@ -8,7 +8,7 @@
     "48": "icon48.png",
     "128": "icon128.png"
   },
-  "permissions": ["storage"],
+  "permissions": ["storage","downloads"],
   "host_permissions": ["https://www.youtube.com/*"],
   "content_scripts": [
     {
@@ -19,3 +19,4 @@
   ],
   "options_page": "options.html"
 }
+
