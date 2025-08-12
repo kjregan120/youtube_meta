@@ -9,6 +9,7 @@
     "128": "icon128.png"
   },
   "permissions": ["storage","downloads"],
+  "background": { "service_worker": "background.js" },
   "host_permissions": ["https://www.youtube.com/*"],
   "content_scripts": [
     {
@@ -19,4 +20,5 @@
   ],
   "options_page": "options.html"
 }
+
 
